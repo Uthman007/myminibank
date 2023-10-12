@@ -1,0 +1,15 @@
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\bin\Debug\net6.0\myminibank.exe
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\bin\Debug\net6.0\myminibank.deps.json
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\bin\Debug\net6.0\myminibank.runtimeconfig.json
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\bin\Debug\net6.0\myminibank.dll
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\bin\Debug\net6.0\myminibank.pdb
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\myminibank.csproj.AssemblyReference.cache
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\myminibank.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\myminibank.AssemblyInfoInputs.cache
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\myminibank.AssemblyInfo.cs
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\myminibank.csproj.CoreCompileInputs.cache
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\myminibank.dll
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\refint\myminibank.dll
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\myminibank.pdb
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\myminibank.genruntimeconfig.cache
+C:\Users\Adewuyi Uthman Alao\source\repos\myminibank\obj\Debug\net6.0\ref\myminibank.dll

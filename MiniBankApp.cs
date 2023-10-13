@@ -51,37 +51,62 @@ namespace myminibank
 		}
 
 		// Define a method for depositing funds
-		public void DepositFunds(double amount)
+		public void DepositFunds()
 		{
+			Console.WriteLine("Enter an amount to deposit:");
+			bool amountSuccess = double.TryParse(Console.ReadLine(), out double amount);
 			// Validate the amount
-			if (amount <= 0)
+			if (amountSuccess)
 			{
-				Console.WriteLine("Invalid amount! Kinldy ensure that 'Amount' is greater than zero.");
-				return;
+				do
+				{
+
+					if (amount <= 0)
+					{
+						Console.WriteLine("Invalid amount! Kinldy ensure that 'Amount' is greater than zero.");
+						return;
+					}
+				} while (amount <= 0);
+
+				// Add the deposited amount to the balance
+				_balance += amount;
+
+				// Display the new balance
+				DisplayBalance();
 			}
-
-			// Add the deposited amount to the balance
-			_balance += amount;
-
-			// Display the new balance
-			DisplayBalance();
+            else
+            {
+				Console.WriteLine("Wrong Input detected. Please enter a valid input");
+				Console.WriteLine();
+			}
 		}
 
 		// Define a method for withdrawing funds
-		public void WithdrawFunds(double amount)
+		public void WithdrawFunds()
 		{
-			// Validate the amount
-			if (amount > _balance)
-			{
-				Console.WriteLine("Insufficient funds! Kindly enter an amount not greater than your current balance.");
-				return;
+			Console.WriteLine("Kindly enter an amount to withdraw:");
+			bool amountSuccess = double.TryParse(Console.ReadLine(), out double amount);
+            if (amountSuccess)
+            {
+                do
+                {
+					// Validate the amount
+					if (amount > _balance)
+					{
+						Console.WriteLine("Insufficient funds! Kindly enter an amount not greater than your current balance.");
+						return;
+					}
+
+				} while (amount > _balance);
+				
+				// Deduct the withdrawn amount from the balance
+				_balance -= amount;
+
+				// Display the new balance
+				DisplayBalance();
+
 			}
-
-			// Deduct the withdrawn amount from the balance
-			_balance -= amount;
-
-			// Display the new balance
-			DisplayBalance();
+			
 		}
 
 		// Define a method for displaying balance

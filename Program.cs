@@ -46,35 +46,37 @@ do
             Console.WriteLine();
         }
     } while (userChoice != 1 && userChoice != 2);
-}
+            if (userChoice == 1)
+            {  //make deposit
+
+                account.DepositFunds();
+                Console.WriteLine();
+            }
+            else if (userChoice == 2)
+            {
+                //make a withdrawal
+                account.WithdrawFunds();
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("Wrong Input detected. Please enter a valid input");
+                Console.WriteLine();
+            }
+
+                Console.WriteLine("Would you like to perform another transaction? \nEnter 1 for \"Yes\" 2 for \"No\"");
+                Console.WriteLine();
+                bool userDecisionSuccess = int.TryParse(Console.ReadLine(), out userDecision);
+  } while (userDecision == 1);
+         
+            if (userDecision == 2)
+            {
+            Console.WriteLine("Bye! Thanks for banking with us :)");
+            Console.WriteLine();
+            }
 
 
 
-    // Deposit funds into the account
-    Console.WriteLine("Enter an amount to deposit...");
-var depositAmountText = Console.ReadLine();
-if (!double.TryParse(depositAmountText, out double depositAmount))
-{
-    Console.WriteLine("Invalid input! Please enter a valid amount.");
-}
-else
-{
-    account.DepositFunds(depositAmount);
-}
 
-Console.WriteLine();
-Console.WriteLine();
-
-// Withdraw funds from the account
-Console.WriteLine("Enter an amount to withdraw...");
-var withdrawalAmountText = Console.ReadLine();
-if (!double.TryParse(withdrawalAmountText, out double withdrawalAmount))
-{
-    Console.WriteLine("Invalid input! Please enter a valid amount.");
-}
-else
-{
-    account.WithdrawFunds(withdrawalAmount);
-}
 
 
